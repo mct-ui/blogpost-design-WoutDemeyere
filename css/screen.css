@@ -14,6 +14,7 @@
     font-weight: 700;
     src: url("../fonts/Inter-Bold.woff2") format("woff2");
 }
+
 /*
     Elements: Page
     ---
@@ -23,7 +24,7 @@
 h1,
 h2,
 h3 {
-    font-family: "Playfair display","Helvetica Neue", Helvetica, arial, sans-serif;
+    font-family: "Inter Web", "Helvetica Neue", Helvetica, arial, sans-serif;
     color: #17181A
 }
 
@@ -31,7 +32,7 @@ html {
     font-size: 16px;
     line-height: 1.5;
     /* font-family: "Inter Web","Helvetica Neue", Helvetica, arial, sans-serif; */
-    font-family: "droid-serif","Helvetica Neue", Helvetica, arial, sans-serif;
+    font-family: "droid-serif", "Helvetica Neue", Helvetica, arial, sans-serif;
     color: #5C6366;
     padding: 48px 24px 24px;
 }
@@ -75,6 +76,7 @@ h1 {
     /* font-family: "Times New Roman", serif; */
     font-size: 36px;
     font-weight: normal;
+    font-family: "Playfair display", "Helvetica Neue", Helvetica, arial, sans-serif;
     line-height: 40px;
     margin: 0 0 24px;
 }
@@ -168,6 +170,7 @@ a:focus {
     html {
         padding: 48px 48px 24px;
     }
+
     h1 {
         font-size: 58px;
         line-height: 64px;
@@ -190,6 +193,7 @@ a:focus {
 */
 
 @media print {
+
     *,
     *:before,
     *:after {
@@ -200,16 +204,20 @@ a:focus {
         box-shadow: none !important;
         text-shadow: none !important;
     }
+
     a,
     a:visited {
         text-decoration: underline;
     }
+
     a[href]:after {
-        content: " (" attr(href) ")";
+        content: " ("attr(href) ")";
     }
+
     abbr[title]:after {
-        content: " (" attr(title) ")";
+        content: " ("attr(title) ")";
     }
+
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -218,14 +226,17 @@ a:focus {
     a[href^="javascript:"]:after {
         content: "";
     }
+
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
+
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -233,16 +244,19 @@ a:focus {
     thead {
         display: table-header-group;
     }
+
     tr,
     img {
         page-break-inside: avoid;
     }
+
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
+
     h2,
     h3 {
         page-break-after: avoid;
